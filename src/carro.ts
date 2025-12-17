@@ -1,17 +1,12 @@
-
-export default class Carro {
- 
-    marca: string;
-    modelo: string;
-
-    
+import Veiculo from './veiculo';
+export default class Carro  extends Veiculo {
+  
+  
     constructor(marca: string, modelo: string) {
-        this.marca = marca;
-        this.modelo = modelo;
+        super(marca, modelo);
     }
-
     
-    mover() {
+    mover(): void {
        console.log("o carro está se movendo")
     }
 }
